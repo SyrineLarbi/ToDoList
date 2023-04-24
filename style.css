@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(16, 84, 109);
+    color: white;
+}
+.form{
+    position: absolute;
+    top: 30%;
+    background-color: rgba(130, 143, 148, 0.233);
+    width: 350px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.57);
+-webkit-box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.57);
+-moz-box-shadow: 1px 1px 5px 3px rgba(0,0,0,0.57);
+}
+.task{
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgba(250, 235, 215, 0.821);
+    border: none;
+    border-radius: 7px 7px 0 0;
+}
+.list{
+    padding: 0;
+    margin: 0;
+}
+.list li{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 7px 0;
+    padding: 15px;
+}
+.list li .trash{
+    color: rgb(103, 19, 19);
+    cursor: pointer;
+}
+.list li .check{
+    color:rgba(83, 191, 83, 0.803);
+    cursor: pointer;
+    margin: 0 6px;
+}
+.list li.checked{
+    color: gray;
+    text-decoration: line-through;
+}
+.list li.checked .check{
+    color: gray;
+}
